@@ -1,0 +1,90 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+main{
+  height: 100vh;
+  padding: 1cm;
+}
+
+#firstDiv{
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+
+#firstDiv > div:last-child {
+  display: flex;
+  gap: 1rem;
+}
+
+#secondDiv {
+  margin-top: 20px;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card{
+
+  height: 400px;
+}
+
+#cardDiv-first{
+  height: 50%;
+}
+
+#cardDiv-first > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#cardDiv-second {
+  height: 50%;
+  min-width: 100px;
+}
+
+
+#firstDiv > div:nth-child(2){
+  display: flex;
+  gap: 1rem;
+}
+
+table {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 350px;
+}
+
+table > tbody > tr > td:last-child {
+  text-align: end;
+}
+
+#firstDiv-second{
+  position: relative;
+}
+ul{
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: wheat;
+  list-style: none;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+li{
+  padding: 10px 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
